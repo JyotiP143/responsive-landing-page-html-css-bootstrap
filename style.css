@@ -1,0 +1,162 @@
+/* Custom Brand Colors and Typography */
+:root {
+    --primary-blue: #1A365D; /* Deep navy */
+    --secondary-blue: #2B6CB0;
+    --accent-teal: #38B2AC;
+    --light-bg: #EBF8FF;
+    --light-gray: #F7FAFC;
+    --e-gov-orange: #F6AD55;
+    --text-main: #2D3748;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Top Bar Links */
+.top-bar {
+    background-color: var(--light-bg);
+}
+.top-link {
+    color: var(--secondary-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.top-link:hover {
+    color: var(--primary-blue);
+}
+
+/* Logo Styling */
+.text-orange { color: var(--e-gov-orange); }
+.logo-text { color: var(--primary-blue); font-size: 2rem; line-height: 1; }
+.logo-subtext { font-size: 0.6rem; letter-spacing: 2px; line-height: 1; }
+
+/* Navigation */
+.navbar .nav-link {
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: var(--accent-teal) !important;
+}
+.navbar .dropdown-toggle::after {
+    color: var(--accent-teal);
+    vertical-align: middle;
+}
+
+/* Utilities */
+.text-primary-blue { color: var(--primary-blue) !important; }
+.btn-teal {
+    background-color: var(--accent-teal);
+    color: white;
+    border: 1px solid var(--accent-teal);
+}
+.btn-teal:hover {
+    background-color: #319795; /* darker teal */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(56, 178, 172, 0.3);
+}
+.btn-outline-primary-blue {
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    background-color: transparent;
+}
+.btn-outline-primary-blue:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(26, 54, 93, 0.2);
+}
+.transition { transition: all 0.3s ease; }
+
+/* Hero Section */
+.hero-section {
+    min-height: 80vh;
+    background-color: #FAFCFF; /* Very light subtle background */
+}
+.hero-title-highlight {
+    font-size: 3.5rem;
+    color: var(--primary-blue);
+}
+.hero-img {
+    transition: transform 0.5s ease;
+}
+.hero-img:hover {
+    transform: scale(1.02);
+}
+.hero-bg-swoosh {
+    background: radial-gradient(circle at 80% 50%, rgba(56, 178, 172, 0.1) 0%, transparent 50%);
+    z-index: 0;
+    pointer-events: none;
+}
+.hero-content {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Base button solid */
+.btn-primary-blue-fill {
+    background-color: var(--primary-blue);
+    color: white;
+    border: 1px solid var(--primary-blue);
+}
+.btn-primary-blue-fill:hover {
+    background-color: #0f1f38;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(26, 54, 93, 0.3);
+}
+
+.max-w-300 {
+    max-width: 300px;
+}
+
+/* Impact Section */
+.impact-bg {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.abstract-card-container {
+    background-color: white;
+}
+.bg-teal { background-color: var(--accent-teal); }
+.bg-light-blue { background-color: #3182ce; }
+.text-teal { color: var(--accent-teal); }
+.text-light-blue { color: #3182ce; }
+.fs-sm { font-size: 0.85rem; }
+
+.stat-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.stat-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 140px;
+}
+
+/* Journey Section */
+.video-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Platform Section */
+.bg-primary-dark {
+    background-color: var(--primary-blue);
+}
